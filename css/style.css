@@ -7,11 +7,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #fff;
 }
 
 a {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -22,6 +20,7 @@ img {
 .container-flex {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 /* Container parte destra */
@@ -33,17 +32,14 @@ img {
 #side-menu {
     background-color: #000;
     width: 230px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 90px);
 }
 
 /* Logo */
 .logo {
     padding: 15px 0 28px 18px;
     display: block;
-}
-
-.logo img {
-    width: 130px;
+    width: 150px;
 }
 
 .logo-small {
@@ -51,8 +47,11 @@ img {
 }
 
 /* Menu top */
-.menu-top a {
+.menu-top {
     font-weight: 700;
+}
+
+.menu-top a {
     color: #676767;
 }
 
@@ -116,9 +115,6 @@ img {
 /* Menu bottom */
 .menu-bottom {
     padding: 0 18px 8px 18px;
-}
-
-.menu-bottom a {
     font-size: 0.8rem;
     font-weight: 700;
 }
@@ -135,7 +131,7 @@ img {
     padding-left: 5px;
 }
 
-.menu-bottom .install:hover{
+.menu-bottom .install:hover {
     color: #fff;
 }
 
@@ -167,7 +163,6 @@ img {
 
 /* #a6d0e1 */
 
-
 /* Header */
 header {
     background-color: #080b12;
@@ -183,19 +178,20 @@ header {
     padding: 12px 35px;
     font-size: 0.75rem;
     font-weight: 700;
+    color: #fff;
 }
 
 /* Main */
 main {
-    /* DEBUG */
     background-color: #141922;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 180px);
     overflow-y: auto;
 }
 
 .main-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 20px;
     font-size: 0.8rem;
@@ -215,8 +211,21 @@ main {
     color: #72757A;
 }
 
+.main-links li a:hover {
+    color: #fff;
+}
+
+section h2 {
+    color: #fff;
+}
+
+section span {
+    color: #7C7E83;
+}
+
 .list-cards {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -242,19 +251,12 @@ main {
 /* Footer */
 footer {
     background-color: #282828;
-    height: 60px;
+    height: 90px;
     width: 100%;
-    position: relative;
-    z-index: 50;
 }
-
 
 /* Tablet version */
 @media all and (max-width: 768px) {
-
-    .list-cards {
-        flex-wrap: wrap;
-    }
     
     .list-cards .card {
         width: calc(100% / 4);
@@ -271,10 +273,8 @@ footer {
     .logo-small {
         display: block;
         padding-top: 2px;
-    }
-
-    .logo-small img {
         width: 20px;
+        margin: 0 auto;
     }
 
     .logo {
@@ -320,15 +320,4 @@ footer {
     .list-cards .card {
         width: calc(100% / 2);
     }
-}
-
-
-@media all and (max-height: 650px) {
-    
-    .menu-links.second {
-        padding-top: 15px;
-        overflow-y: auto;
-        height: 150px;
-    } 
-
 }
