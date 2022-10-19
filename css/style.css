@@ -3,3 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Container parte destra */
+.container-right {
+    width: calc(100% - 200px);
+}
+
+/* Menu nav */
+#side-menu {
+    /* DEBUG */
+    background-color: blueviolet;
+    width: 200px;
+    height: calc(100vh - 80px);
+}
+
+.menu-links {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* DEBUG */
+    background-color: red;
+    height: 70px;
+}
+
+/* Main */
+main {
+    /* DEBUG */
+    background-color: brown;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.main-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.list-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(100% / 6);
+    /* DEBUG */
+    background-color: green;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.list-cards:not(.first) {
+    justify-content: flex-start;
+}
+
+.list-cards:not(.first) .card {
+    width: 100px
+}
+
+.list-cards.third .card {
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    /* DEBUG */
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+}
