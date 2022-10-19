@@ -34,7 +34,10 @@ img {
     background-color: #000;
     width: 230px;
     height: calc(100vh - 60px);
-    padding: 15px 0;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -51,14 +54,12 @@ img {
 
 .menu-links {
     list-style-type: none;
-    padding-top: 20px;
 }
 
 .menu-links li img {
     width: 25px;
     vertical-align: middle;
     filter: invert(25%);
-    
 }
 
 .menu-links .selected {
@@ -74,19 +75,50 @@ img {
 }
 
 .menu-links li {
-    font-size: 0.8rem;
-    padding: 0 18px;
-    height: 34px;
+    padding-left: 18px;
+    min-height: 34px;
     line-height: 34px;
+    font-size: 0.8rem;
 }
 
-.menu-links li a {
-    font-weight: 600;
+#side-menu a {
+    font-weight: 700;
     color: #676767;
 }
 
-.menu-links li a:hover {
+#side-menu a:hover {
     color: #fff;
+}
+
+#side-menu h3 {
+    padding: 18px 0 10px 18px;
+    font-size: 0.87rem;
+}
+
+.menu-links .add-playlist {
+    font-size: 0.9rem;
+    padding-bottom: 7px;
+}
+
+.add-playlist i {
+    background: #a3a3a3; 
+    padding: 10px; 
+    font-size: 1.1rem; 
+    color: #000; 
+    margin-right: 7px; 
+    vertical-align: middle;
+}
+
+.menu-top {
+    overflow: hidden;
+}
+
+.menu-top .menu-links {
+    overflow: hidden;
+}
+
+.menu-bottom img {
+    width: 25px;
 }
 
 /* #a6d0e1 */
