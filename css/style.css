@@ -33,16 +33,13 @@ img {
 #side-menu {
     background-color: #000;
     width: 230px;
-    height: calc(100vh - 60px);
-    padding-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-height: calc(100vh - 60px);
+    overflow: hidden;
+    position: relative;
 }
 
 .logo {
-    padding-left: 18px;
-    padding-bottom: 28px;
+    padding: 15px 0 28px 18px;
     display: block;
 }
 
@@ -78,17 +75,17 @@ img {
 
 .menu-links li {
     padding-left: 18px;
-    min-height: 34px;
+    height: 34px;
     line-height: 34px;
     font-size: 0.8rem;
 }
 
-#side-menu a {
+.menu-top a {
     font-weight: 700;
     color: #676767;
 }
 
-#side-menu a:hover {
+.menu-top a:hover {
     color: #fff;
 }
 
@@ -97,9 +94,9 @@ img {
     font-size: 0.87rem;
 }
 
-.menu-links .add-playlist {
+.add-playlist {
     font-size: 0.9rem;
-    padding-bottom: 7px;
+    padding-left: 18px;
 }
 
 .add-playlist i {
@@ -111,12 +108,21 @@ img {
     vertical-align: middle;
 }
 
+.add-playlist:hover i {
+    background: #fff;
+}
+
 .menu-bottom {
     padding: 0 18px 8px 18px;
 }
 
 .menu-bottom a {
     font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.menu-bottom .install, .menu-bottom .install:hover i {
+    color: #676767;
 }
 
 .menu-bottom .install i {
@@ -124,8 +130,12 @@ img {
     vertical-align: middle;
 }
 
+.menu-bottom .install:hover{
+    color: #fff;
+}
+
 .menu-bottom .install {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     display: block;
 }
 
@@ -135,7 +145,6 @@ img {
 }
 
 .profile-user {
-    display: block;
     border-top: 1px solid #585858;
     padding-top: 15px;
 }
