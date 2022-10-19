@@ -42,6 +42,8 @@ img {
 
 .logo {
     padding-left: 18px;
+    padding-bottom: 28px;
+    display: block;
 }
 
 .logo img {
@@ -109,19 +111,51 @@ img {
     vertical-align: middle;
 }
 
-.menu-top {
-    overflow: hidden;
+.menu-bottom {
+    padding: 0 18px 8px 18px;
 }
 
-.menu-top .menu-links {
-    overflow: hidden;
+.menu-bottom a {
+    font-size: 0.8rem;
+}
+
+.menu-bottom .install i {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.menu-bottom .install {
+    padding-bottom: 8px;
+    display: block;
 }
 
 .menu-bottom img {
     width: 25px;
+    height: 25px;
+}
+
+.profile-user {
+    display: block;
+    border-top: 1px solid #585858;
+    padding-top: 15px;
+}
+
+.profile-user img {
+    background-color: #808080;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-user span {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9rem;
+    padding-left: 6px;
+    vertical-align: middle;
 }
 
 /* #a6d0e1 */
+
 
 /* Header */
 header {
