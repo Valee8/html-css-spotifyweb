@@ -14,7 +14,7 @@ a {
     text-decoration: none;
 }
 
-img {
+nav img, main img {
     max-width: 100%;
 }
 
@@ -321,6 +321,11 @@ footer a {
 .footer-left .list-footer i {
     color: #7C7E83;
     font-size: 0.9rem;
+    padding: 0 5px;
+}
+
+.footer-left .list-footer .song {
+    padding-right: 30px;
 }
 
 .list-footer img {
@@ -374,9 +379,13 @@ footer a {
     width: 30%;
 }
 
-.bar {
+.footer-center .bar {
     width: 100%;
 }
+
+.footer-right .bar {
+    width: 130px;
+} 
 
 .bar {
     background-color: #606060;
@@ -426,6 +435,28 @@ footer a {
     .list-cards .card {
         width: calc(100% / 4);
     }
+
+    .footer-left {
+        width: 20%;
+    }
+
+    .footer-center {
+        width: 40%;
+    }
+
+    .footer-right {
+        width: 30%;
+    }
+
+    .footer-left .list-footer .song {
+        padding-right: 0;
+    }
+
+    .button-upgrade {
+        font-size: 0.7rem;
+        padding: 6px 20px;
+    }
+
 }
 
 /* Mobile version */
@@ -471,6 +502,11 @@ footer a {
         padding: 0;
     }
 
+    .button-upgrade {
+        font-size: 0.5rem;
+        padding: 6px 20px;
+    }
+
     .container-right {
         width: calc(100% - 40px);
     }
@@ -480,16 +516,17 @@ footer a {
     }
 
     .list-footer  {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .footer-left .list-footer i {
         font-size: 0.7rem;
         display: block;
+        padding-top: 2px;
     }
 
     .list-footer img {
-        width: 30px;
+        width: 20px;
     }
 
     .song-name {
@@ -504,10 +541,35 @@ footer a {
         gap: 5px;
     }
 
-    .footer-left, .footer-center, .footer-right {
-        width: calc(100% / 3);
-        padding: 0 3px;
+    .footer-left .list-footer .song {
+        padding-right: 0;
     }
+
+    .footer-left .list-footer  {
+        padding: 0;
+    }
+
+    .footer-left {
+        width: 20%;
+    }
+
+    .footer-center {
+        width: 40%;
+    }
+
+    .footer-right {
+        width: 30%;
+    }
+
+    .footer-left {
+        padding-right: 10px;
+    }
+
+    .footer-right {
+        padding-left: 10px;
+    }
+
+
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
