@@ -279,16 +279,56 @@ section span {
 /* Footer */
 footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: #282828;
     height: 90px;
     width: 100%;
     color: #fff;
+    padding: 0 10px;
 }
 
-.footer-left img {
-    width: 50px;
+footer a {
+    color: #fff;
 }
+
+.song-name {
+    display: block;
+    color: #7C7E83;
+    font-size: 0.6rem;
+}
+
+.list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.list-footer i {
+    color: #7C7E83;
+    font-size: 0.9rem;
+}
+
+.list-footer img {
+    width: 45px;
+    vertical-align: middle;
+}
+
+.player-top, .player-bottom {
+    display: flex;
+    list-style-type: none;
+}
+
+.player-top {
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+
 
 /* Tablet version */
 @media all and (max-width: 900px) {
