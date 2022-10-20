@@ -278,9 +278,16 @@ section span {
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: space-between;
     background-color: #282828;
     height: 90px;
     width: 100%;
+    color: #fff;
+}
+
+.footer-left img {
+    width: 50px;
 }
 
 /* Tablet version */
