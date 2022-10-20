@@ -169,8 +169,6 @@ nav img, main img {
     vertical-align: middle;
 }
 
-/* #a6d0e1 */
-
 /* Header */
 header {
     display: flex;
@@ -434,7 +432,6 @@ footer a {
     gap: 17px;
 }
 
-
 /* Tablet version */
 @media all and (max-width: 900px) {
     
@@ -582,7 +579,6 @@ footer a {
     .footer-right {
         padding-left: 10px;
     }
-
 
 }
 
