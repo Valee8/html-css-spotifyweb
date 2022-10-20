@@ -365,12 +365,13 @@ footer a {
 .bar-circle {
     background-color: #fdfdfe;
     padding: 4px;
-    height: 10px;
-    width: 10px;
+    height: 13px;
+    width: 13px;
     border-radius: 50%;
     position: absolute;
+    top: 50%;
     right: 0;
-    top: -3px;
+    transform: translate(0, -50%);
     display: none;
 }
 
