@@ -26,11 +26,13 @@ nav img, main img {
 /* Container parte destra */
 .container-right {
     width: calc(100% - 230px);
-    overflow: hidden;
 }
 
 /* Menu nav - parte sinistra */
 #side-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #000;
     width: 230px;
     height: calc(100vh - 90px);
@@ -49,16 +51,20 @@ nav img, main img {
 }
 
 /* Menu top */
-.menu-top {
+.menu-top, .menu-links.second {
     font-weight: 700;
 }
 
-.menu-top a {
+.menu-top a, .menu-links.second a {
     color: #676767;
 }
 
-.menu-top a:hover {
+.menu-top a:hover, .menu-links.second a:hover {
     color: #fff;
+}
+
+.menu-links.second {
+    overflow-y: auto;
 }
 
 .menu-links {
@@ -481,6 +487,14 @@ footer a {
         display: none;
     }
 
+    .menu-bottom .install {
+        padding-bottom: 0;
+    }
+
+    .profile-user {
+        padding-bottom: 10px;
+    }
+
     .menu-links .selected {
         border-left: 0;
     }
@@ -577,4 +591,4 @@ footer a {
     .list-cards .card {
         width: calc(100% / 2);
     }
-} 
+}
