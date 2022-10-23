@@ -483,6 +483,10 @@ footer a {
         display: none;
     }
 
+    .menu-top {
+        flex-grow: 1;
+    }
+
     .menu-links li span, #side-menu h3, .add-playlist, .menu-links.second, .install span, .profile-user span {
         display: none;
     }
